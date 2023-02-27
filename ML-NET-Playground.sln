@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laptop-Price-Prediction", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PricePredictionModel_Console", "Price Prediction\PricePredictionModel_Console\PricePredictionModel_Console.csproj", "{20ED1108-0DCE-46D9-8B59-331860786026}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aggression Scorer", "Aggression Scorer", "{33B44350-A39B-4734-9B38-5214654641A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggressionScorerModel", "Aggression Scorer\AggressionScorerModel\AggressionScorerModel.csproj", "{6749AAFB-A8EA-4B06-BB79-A271271A8652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggressionScorer", "Aggression Scorer\AggressionScorer\AggressionScorer.csproj", "{3CFA019F-0E2A-4AC2-8FAD-EB7530C03BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggressionScorerAPI", "Aggression Scorer\AggressionScorerAPI\AggressionScorerAPI.csproj", "{E58BB0A6-0F18-4EAB-A635-3104BD3BD8A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +31,18 @@ Global
 		{20ED1108-0DCE-46D9-8B59-331860786026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20ED1108-0DCE-46D9-8B59-331860786026}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20ED1108-0DCE-46D9-8B59-331860786026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6749AAFB-A8EA-4B06-BB79-A271271A8652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6749AAFB-A8EA-4B06-BB79-A271271A8652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6749AAFB-A8EA-4B06-BB79-A271271A8652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6749AAFB-A8EA-4B06-BB79-A271271A8652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFA019F-0E2A-4AC2-8FAD-EB7530C03BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFA019F-0E2A-4AC2-8FAD-EB7530C03BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFA019F-0E2A-4AC2-8FAD-EB7530C03BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFA019F-0E2A-4AC2-8FAD-EB7530C03BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E58BB0A6-0F18-4EAB-A635-3104BD3BD8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E58BB0A6-0F18-4EAB-A635-3104BD3BD8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E58BB0A6-0F18-4EAB-A635-3104BD3BD8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E58BB0A6-0F18-4EAB-A635-3104BD3BD8A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +50,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{79E65225-E613-4F2B-9E96-4D429E4656E5} = {5BE839AC-AD92-4EF5-8B46-9DC3689FA2DD}
 		{20ED1108-0DCE-46D9-8B59-331860786026} = {5BE839AC-AD92-4EF5-8B46-9DC3689FA2DD}
+		{6749AAFB-A8EA-4B06-BB79-A271271A8652} = {33B44350-A39B-4734-9B38-5214654641A3}
+		{3CFA019F-0E2A-4AC2-8FAD-EB7530C03BDA} = {33B44350-A39B-4734-9B38-5214654641A3}
+		{E58BB0A6-0F18-4EAB-A635-3104BD3BD8A9} = {33B44350-A39B-4734-9B38-5214654641A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2784A78D-43F5-4FAF-9594-18A1D086D9E2}
