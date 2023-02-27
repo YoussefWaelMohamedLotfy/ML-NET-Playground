@@ -1,0 +1,605 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "D:\\Programming Projects\\C# Projects\\ML-NET-Playground\\Price Prediction\\Laptop-Price-Prediction\\laptoppricesUS.tsv",
+    "Delimiter": "\t",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "CPU",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "GHz",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "GPU",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "RAM",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "RAMType",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Screen",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Storage",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "SSD",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Weight",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Price",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.74549972783650242,
+        "RuntimeInSeconds": 5.669,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ],
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "InputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD",
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 7823,
+            "MinimumExampleCountPerLeaf": 25,
+            "LearningRate": 0.28362769823522976,
+            "NumberOfTrees": 4131,
+            "SubsampleFraction": 0.71298237302783118,
+            "MaximumBinCountPerFeature": 80,
+            "FeatureFraction": 0.86733858233492667,
+            "L1Regularization": 2.2738751901856726E-09,
+            "L2Regularization": 0.73158502380799428,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.678739307423804,
+        "RuntimeInSeconds": 12.137,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ],
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "InputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD",
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 6395,
+            "MinimumExampleCountPerLeaf": 64,
+            "LearningRate": 0.87788542023402882,
+            "NumberOfTrees": 7540,
+            "SubsampleFraction": 0.014440884465607777,
+            "MaximumBinCountPerFeature": 18,
+            "FeatureFraction": 0.86200602887943711,
+            "L1Regularization": 5.0892309362984388E-07,
+            "L2Regularization": 0.99999977667298645,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.67178960583002123,
+        "RuntimeInSeconds": 0.16,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ],
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "InputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD",
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 30,
+            "LearningRate": 0.96096252105578162,
+            "NumberOfTrees": 1143,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 158,
+            "FeatureFraction": 0.99999999,
+            "L1Regularization": 4.3547302401395049E-10,
+            "L2Regularization": 0.99999977667298645,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.62428298790876,
+        "RuntimeInSeconds": 0.727,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ],
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "InputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD",
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 46,
+            "LearningRate": 0.11595670286644433,
+            "NumberOfTrees": 4991,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 82,
+            "FeatureFraction": 0.98100959755757222,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.70648471959576775,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.54528879361427385,
+        "RuntimeInSeconds": 0.176,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ],
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "InputColumnNames": [
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "CPU",
+              "GPU",
+              "RAMType",
+              "SSD",
+              "GHz",
+              "RAM",
+              "Screen",
+              "Storage",
+              "Weight"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ReplaceMissingValues",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LightGbmRegression",
+      "e6": "LbfgsPoissonRegressionRegression",
+      "e7": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "D:\\Programming Projects\\C# Projects\\ML-NET-Playground\\Price Prediction\\Laptop-Price-Prediction\\PricePredictionModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 4,
+  "TrainingOption": {
+    "Version": 0,
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 30,
+    "LabelColumn": "Price",
+    "Seed": 0
+  }
+}
