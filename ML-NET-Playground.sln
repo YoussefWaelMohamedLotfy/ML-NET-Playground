@@ -19,11 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggressionScorerAPI", "Aggr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News Classifier", "News Classifier", "{A5E6C4FD-A11C-4D9D-8416-9BC5A7BB2E1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsClassifier", "News Classifier\NewsClassifier\NewsClassifier.csproj", "{E2B7C241-8E25-4AE1-AC83-2C932E289A54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsClassifier", "News Classifier\NewsClassifier\NewsClassifier.csproj", "{E2B7C241-8E25-4AE1-AC83-2C932E289A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsClassifierModel", "News Classifier\NewsClassifierModel\NewsClassifierModel.csproj", "{43D5EA5B-0A54-4E72-8957-1D585B4BB705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsClassifierModel", "News Classifier\NewsClassifierModel\NewsClassifierModel.csproj", "{43D5EA5B-0A54-4E72-8957-1D585B4BB705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsClassifierTrainer", "News Classifier\NewsClassifierTrainer\NewsClassifierTrainer.csproj", "{6F84288E-FCBB-49D6-95BD-473759001265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsClassifierTrainer", "News Classifier\NewsClassifierTrainer\NewsClassifierTrainer.csproj", "{6F84288E-FCBB-49D6-95BD-473759001265}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recommender System", "Recommender System", "{6C9251E3-E1CE-4F24-B13B-D8C165BE1492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecommenderSystem", "Recommender System\RecommenderSystem\RecommenderSystem.csproj", "{488D5059-51DB-4D1D-BC64-FFC1BA18D0E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,10 @@ Global
 		{6F84288E-FCBB-49D6-95BD-473759001265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F84288E-FCBB-49D6-95BD-473759001265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F84288E-FCBB-49D6-95BD-473759001265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488D5059-51DB-4D1D-BC64-FFC1BA18D0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488D5059-51DB-4D1D-BC64-FFC1BA18D0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488D5059-51DB-4D1D-BC64-FFC1BA18D0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488D5059-51DB-4D1D-BC64-FFC1BA18D0E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +84,7 @@ Global
 		{E2B7C241-8E25-4AE1-AC83-2C932E289A54} = {A5E6C4FD-A11C-4D9D-8416-9BC5A7BB2E1E}
 		{43D5EA5B-0A54-4E72-8957-1D585B4BB705} = {A5E6C4FD-A11C-4D9D-8416-9BC5A7BB2E1E}
 		{6F84288E-FCBB-49D6-95BD-473759001265} = {A5E6C4FD-A11C-4D9D-8416-9BC5A7BB2E1E}
+		{488D5059-51DB-4D1D-BC64-FFC1BA18D0E2} = {6C9251E3-E1CE-4F24-B13B-D8C165BE1492}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2784A78D-43F5-4FAF-9594-18A1D086D9E2}
