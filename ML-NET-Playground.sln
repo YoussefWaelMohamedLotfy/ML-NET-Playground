@@ -45,6 +45,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facial Expression", "Facial Expression", "{E18E5AA9-D0EF-465F-AF61-27C95E170873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacialExpressionDetector", "Facial Expression\FacialExpressionDetector\FacialExpressionDetector.csproj", "{A4A33E2F-E3C4-4507-B1FF-32DC45C97721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacialExpressionDetectorCLI", "Facial Expression\FacialExpressionDetectorCLI\FacialExpressionDetectorCLI.csproj", "{F5324319-39D4-40ED-BBC8-881ACE3AF9E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebcamEmotionDetector", "Facial Expression\WebcamEmotionDetector\WebcamEmotionDetector.csproj", "{2934BB60-57E8-4144-8841-DEFF62286D39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +107,18 @@ Global
 		{8E110949-2128-4F99-B227-18EDD2C1156C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E110949-2128-4F99-B227-18EDD2C1156C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E110949-2128-4F99-B227-18EDD2C1156C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A33E2F-E3C4-4507-B1FF-32DC45C97721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A33E2F-E3C4-4507-B1FF-32DC45C97721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A33E2F-E3C4-4507-B1FF-32DC45C97721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A33E2F-E3C4-4507-B1FF-32DC45C97721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5324319-39D4-40ED-BBC8-881ACE3AF9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5324319-39D4-40ED-BBC8-881ACE3AF9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5324319-39D4-40ED-BBC8-881ACE3AF9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5324319-39D4-40ED-BBC8-881ACE3AF9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2934BB60-57E8-4144-8841-DEFF62286D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2934BB60-57E8-4144-8841-DEFF62286D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2934BB60-57E8-4144-8841-DEFF62286D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2934BB60-57E8-4144-8841-DEFF62286D39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +136,9 @@ Global
 		{E5699032-CFC0-49DE-AB56-79B97A50CA22} = {E794E63B-059C-4F2F-9BE6-F1A9DA31E648}
 		{98AF03C6-F757-461C-8C3B-B4DA32AFE3D7} = {E794E63B-059C-4F2F-9BE6-F1A9DA31E648}
 		{8E110949-2128-4F99-B227-18EDD2C1156C} = {E794E63B-059C-4F2F-9BE6-F1A9DA31E648}
+		{A4A33E2F-E3C4-4507-B1FF-32DC45C97721} = {E18E5AA9-D0EF-465F-AF61-27C95E170873}
+		{F5324319-39D4-40ED-BBC8-881ACE3AF9E2} = {E18E5AA9-D0EF-465F-AF61-27C95E170873}
+		{2934BB60-57E8-4144-8841-DEFF62286D39} = {E18E5AA9-D0EF-465F-AF61-27C95E170873}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2784A78D-43F5-4FAF-9594-18A1D086D9E2}
