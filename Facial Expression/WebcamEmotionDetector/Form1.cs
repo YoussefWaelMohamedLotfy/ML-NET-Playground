@@ -1,7 +1,5 @@
 using Microsoft.ML.Data;
 using OpenCvSharp;
-using OpenCvSharp.Extensions;
-using System.Drawing.Imaging;
 
 namespace WebcamEmotionDetector;
 

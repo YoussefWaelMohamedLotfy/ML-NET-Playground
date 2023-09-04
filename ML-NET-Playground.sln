@@ -47,11 +47,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facial Expression", "Facial Expression", "{E18E5AA9-D0EF-465F-AF61-27C95E170873}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacialExpressionDetector", "Facial Expression\FacialExpressionDetector\FacialExpressionDetector.csproj", "{A4A33E2F-E3C4-4507-B1FF-32DC45C97721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacialExpressionDetector", "Facial Expression\FacialExpressionDetector\FacialExpressionDetector.csproj", "{A4A33E2F-E3C4-4507-B1FF-32DC45C97721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacialExpressionDetectorCLI", "Facial Expression\FacialExpressionDetectorCLI\FacialExpressionDetectorCLI.csproj", "{F5324319-39D4-40ED-BBC8-881ACE3AF9E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacialExpressionDetectorCLI", "Facial Expression\FacialExpressionDetectorCLI\FacialExpressionDetectorCLI.csproj", "{F5324319-39D4-40ED-BBC8-881ACE3AF9E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebcamEmotionDetector", "Facial Expression\WebcamEmotionDetector\WebcamEmotionDetector.csproj", "{2934BB60-57E8-4144-8841-DEFF62286D39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebcamEmotionDetector", "Facial Expression\WebcamEmotionDetector\WebcamEmotionDetector.csproj", "{2934BB60-57E8-4144-8841-DEFF62286D39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SentenceSimilarity", "SentenceSimilarity", "{4B339E08-659F-4F88-8BB4-EC3274BE78C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentenceSimilarityPOC", "SentenceSimilarity\SentenceSimilarityPOC\SentenceSimilarityPOC.csproj", "{50131055-2798-41EB-B564-71CD2C975CFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +123,10 @@ Global
 		{2934BB60-57E8-4144-8841-DEFF62286D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2934BB60-57E8-4144-8841-DEFF62286D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2934BB60-57E8-4144-8841-DEFF62286D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50131055-2798-41EB-B564-71CD2C975CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50131055-2798-41EB-B564-71CD2C975CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50131055-2798-41EB-B564-71CD2C975CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50131055-2798-41EB-B564-71CD2C975CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +147,7 @@ Global
 		{A4A33E2F-E3C4-4507-B1FF-32DC45C97721} = {E18E5AA9-D0EF-465F-AF61-27C95E170873}
 		{F5324319-39D4-40ED-BBC8-881ACE3AF9E2} = {E18E5AA9-D0EF-465F-AF61-27C95E170873}
 		{2934BB60-57E8-4144-8841-DEFF62286D39} = {E18E5AA9-D0EF-465F-AF61-27C95E170873}
+		{50131055-2798-41EB-B564-71CD2C975CFE} = {4B339E08-659F-4F88-8BB4-EC3274BE78C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2784A78D-43F5-4FAF-9594-18A1D086D9E2}
